@@ -65,7 +65,7 @@
           <h1 lang="ru" class="title-hero">
             ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА
           </h1>
-          <button type="button" lang="ru" class="hero-button">
+          <button type="button" lang="ru" class="hero-button" data-modal-open>
             Заказать услугу
           </button>
         </div></div>
@@ -133,13 +133,28 @@
           <h2 lang="ru" class="occupation-title">Чем мы занимаемся</h2>
           <ul class="occupation-list">
             <li class="occupation-item">
+              <div class="image-discription">
               <img src="./img/keyboard.jpg" width="370" alt="клавиатура" />
+             <div class="text-division">
+              <p class="occupation-text">Десктопные приложения</p>
+              </div>
+            </div>
             </li>
             <li class="occupation-item">
+              <div class="image-discription">
               <img src="./img/tele.jpg" width="370" alt="телефон" />
+              <div class="text-division">
+                <p class="occupation-text">Мобильные приложения</p>
+              </div>
+              </div>
             </li>
             <li class="occupation-item">
+              <div class="image-discription">
               <img src="./img/dispay.jpg" width="370" alt="монитор" />
+              <div class="text-division">
+                <p class="occupation-text">Дизайнерские решения</p>
+              </div>
+              </div>
             </li>
           </ul>
         </div>
@@ -413,5 +428,16 @@
         </div>
       </div>
     </footer>
+    <div class="back-page is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-button" data-modal-close>
+          <svg width="11" height="11">
+            <use href="./img/symbol-defs.svg#icon-Vector">
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
