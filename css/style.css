@@ -357,14 +357,13 @@ img {
 }
 
 .link-network:hover,
-.link-network:focus {
-  background-color: var(--akcent-text-button-color);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+.link-network:focus,
 .link-network:hover .icon-network,
 .link-network:focus .icon-network {
+  background-color: var(--akcent-text-button-color);
   fill: #ffffff;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* ==========CLIENTS========= */
